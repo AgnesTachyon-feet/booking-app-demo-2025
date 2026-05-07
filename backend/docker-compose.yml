@@ -20,7 +20,7 @@ services:
     build: .
     restart: unless-stopped
     ports:
-      - '3001:3001'
+      - "3001:3001"
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/booking_app
       JWT_SECRET: your-production-jwt-secret-key-change-this
